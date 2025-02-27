@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Weather Forecast</h1>
-                <p>Get real-time weather updates for any location</p>
-            </header>
-            <section class="search-box">
-                <input type="text" id="cityInput" placeholder="Enter city name">
-                <button id="searchBtn">Search</button>
-            </section>
-            <section class="weather-info">
-                <div class="weather-card">
-                    <h2 id="cityName">City Name</h2>
-                    <p id="temperature">--°C</p>
-                    <p id="weatherCondition">Weather Condition</p>
-                </div>
-            </section>
-        </div>
-    </body>
-    <script src="./script.js"></script>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <p>Get real-time weather updates for any location</p>
+        </header>
+        
+        <section class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <section class="weather-info">
+            <div class="weather-card">
+                <h2 id="cityName">City Name</h2>
+                <img id="weatherIcon" src="" alt="Weather icon">
+                <p id="temperature">--°C</p>
+                <p id="weatherCondition">Weather Condition</p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>7-Day Forecast</h3>
+            <div id="forecastContainer"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
